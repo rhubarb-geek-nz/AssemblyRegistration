@@ -41,11 +41,9 @@ Required registry information can be gathered using [regasm](https://learn.micro
 regasm RhubarbGeekNz.AssemblyRegistration.Library.dll /regfile:displib.reg /codebase
 ```
 
-Test with PowerShell using Activator.
+Test with PowerShell
 
 ```
-$guid = [Guid]::Parse('4c00572c-ccf0-4f6d-8203-546c754a125a')
-$type = [Type]::GetTypeFromCLSID($guid)
-$obj = [Activator]::CreateInstance($type)
+$obj = New-Object -ComObject 'RhubarbGeekNz.AssemblyRegistration'
 $obj.GetMessage(1)
 ```
