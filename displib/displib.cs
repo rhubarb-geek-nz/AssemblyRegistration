@@ -5,8 +5,9 @@
 
 using System;
 using System.Runtime.InteropServices;
+using RhubarbGeekNz.AssemblyRegistration;
 
-namespace RhubarbGeekNz.AssemblyRegistration
+namespace RhubarbGeekNz.AssemblyRegistration.Library
 {
     [Guid("4c00572c-ccf0-4f6d-8203-546c754a125a")]
     public class CHelloWorld : IHelloWorld

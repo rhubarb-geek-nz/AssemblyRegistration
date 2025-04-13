@@ -28,7 +28,7 @@
         <File Id="fil206829A74DFF7880F64BE9D5C35CFF80" KeyPath="yes" Source="..\displib\bin\Release\netstandard2.0\publish\RhubarbGeekNz.AssemblyRegistration.Library.dll" />
         <RegistryValue Id="reg852b816e97fc40558f6085a82a262f7e" Root="HKCR" Key="CLSID\{4C00572C-CCF0-4F6D-8203-546C754A125A}\InprocServer32" Value="mscoree.dll" Type="string" Action="write" />
         <RegistryValue Id="reg852b816e97fc40558f6085a82a262f7f" Root="HKCR" Key="CLSID\{4C00572C-CCF0-4F6D-8203-546C754A125A}\InprocServer32" Name="ThreadingModel" Value="Both" Type="string" Action="write" />
-        <RegistryValue Id="reg852b816e97fc40558f6085a82a262f72" Root="HKCR" Key="CLSID\{4C00572C-CCF0-4F6D-8203-546C754A125A}\InprocServer32" Name="Class" Value="RhubarbGeekNz.AssemblyRegistration.CHelloWorld" Type="string" Action="write" />
+        <RegistryValue Id="reg852b816e97fc40558f6085a82a262f72" Root="HKCR" Key="CLSID\{4C00572C-CCF0-4F6D-8203-546C754A125A}\InprocServer32" Name="Class" Value="RhubarbGeekNz.AssemblyRegistration.Library.CHelloWorld" Type="string" Action="write" />
         <RegistryValue Id="reg852b816e97fc40558f6085a82a262f73" Root="HKCR" Key="CLSID\{4C00572C-CCF0-4F6D-8203-546C754A125A}\InprocServer32" Name="Assembly" Value="RhubarbGeekNz.AssemblyRegistration.Library, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0693c1ad76204d2e" Type="string" Action="write" />
         <RegistryValue Id="reg852b816e97fc40558f6085a82a262f74" Root="HKCR" Key="CLSID\{4C00572C-CCF0-4F6D-8203-546C754A125A}\InprocServer32" Name="RuntimeVersion" Value="v4.0.30319" Type="string" Action="write" />
         <RegistryValue Id="reg852b816e97fc40558f6085a82a262f71" Root="HKCR" Key="CLSID\{4C00572C-CCF0-4F6D-8203-546C754A125A}\InprocServer32" Name="Codebase" Value="[!fil206829A74DFF7880F64BE9D5C35CFF80]" Type="string" Action="write" />
@@ -36,6 +36,13 @@
       </Component>
       <Component Id="cmp49644F99A8DC013BD2FA39270E26C76D" Guid="*" Directory="INSTALLDIR" Win64="$(env.PRODUCTWIN64)">
         <File Id="fil206829A74DFF7880F64BE9D5C35CFF81" KeyPath="yes" Source="..\displib\bin\Release\netstandard2.0\publish\RhubarbGeekNz.AssemblyRegistration.dll" />
+      </Component>
+      <Component Id="cmpC5599C4E7A1D7E5F3EC4BC0D274676CD" Guid="*" Directory="INSTALLDIR" Win64="$(env.PRODUCTWIN64)">
+        <File Id="fil7BDAEB5BACE2AD371A3F5B3D7BCCF7D8" KeyPath="yes" Source="..\disptlb\RhubarbGeekNz.AssemblyRegistration.tlb">
+          <TypeLib Id="{AFF61028-A918-441C-910A-794494EDB9F6}" Description="Assembly Registration Hello World Component 1.0 Type Library" HelpDirectory="INSTALLDIR" Language="0" MajorVersion="1" MinorVersion="0">
+            <Interface Id="{9B059FDD-95E8-407A-9872-853FDCDA222C}" Name="IHelloWorld" ProxyStubClassId32="{00020424-0000-0000-C000-000000000046}" />
+          </TypeLib>
+        </File>
       </Component>
     </ComponentGroup>
   </Fragment>

@@ -25,4 +25,10 @@ library RhubarbGeekNzAssemblyRegistration
 	{
 		HRESULT GetMessage(int Hint,[retval,out] BSTR *lpMessage);
 	}
+
+	[uuid(4c00572c-ccf0-4f6d-8203-546c754a125a),helpstring("CHelloWorld class")]
+	coclass CHelloWorld
+	{
+		[default] interface IHelloWorld;
+	};
 }
